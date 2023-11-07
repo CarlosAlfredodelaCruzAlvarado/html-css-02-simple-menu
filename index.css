@@ -1,0 +1,72 @@
+.info{
+    cursor: pointer;
+    margin: 20px;
+}
+
+.barra1, .barra2, .barra3{
+    width: 60px;
+    height: 10px;
+    background-color: silver;
+    margin: 5px 10px 5px 10px;
+    border: solid 2px black;
+    transition: 0.5s;
+}
+
+.cambio .barra1{
+    transform: translate(0,18px) rotate(-45deg);
+}
+
+.cambio .barra2{
+    opacity: 0;
+}
+
+.cambio .barra3{
+    transform: translate(0,-18px) rotate(45deg);
+}
+
+body{
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: black;
+    background-position: 0% 0%;
+    background-size: 100vw 100vh ;
+    transition: background-image 1s linear;
+}
+
+.menuLetras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    position: relative;
+    line-height: 150%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    list-style: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 5px black;
+    color: white;
+  }
+
+li:hover{
+    font-size: 70px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.infoCaja{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    justify-content: center;
+    line-height: 120%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-top: solid 2px silver;
+    border-bottom: solid 2px silver;
+}
